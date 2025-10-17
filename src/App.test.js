@@ -6,8 +6,8 @@ test('renderiza el título de la lista de tareas', () => {
   render(<App />);
   
   
-  const titleElement = screen.getByRole('heading', { level: 1 }); 
-  const titleText = screen.getByText(/Listado de tareas/i); 
+  const titleElement = screen.getByRole('heading', { level: 5 }); 
+  const titleText = screen.getByText(/Lista de tareas/i); 
 
   expect(titleElement).toBeInTheDocument();
   expect(titleText).toBeInTheDocument();

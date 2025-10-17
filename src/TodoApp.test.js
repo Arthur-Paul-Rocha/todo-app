@@ -24,7 +24,7 @@ test('actualiza el contador de tareas pendientes', () => {
     fireEvent.click(buttonElement);
   });
   
-  // VerifICO QUE LA TAREA ESTE EN LA LISTA SELECCIONADA
+  // Verifico que la tarea esté en la lista seleccionada
   const newTaskElement = screen.getByText(/Nueva tarea/i);
   expect(newTaskElement).toBeInTheDocument();
 });
